@@ -1,3 +1,5 @@
+# Reference: https://medium.com/@aswinvb/how-to-perform-thermal-to-visible-image-registration-c18a34894866
+
 from __future__ import print_function
 import cv2
 import numpy as np
@@ -48,12 +50,12 @@ def alignImages(im1, im2):
 
 if __name__ == '__main__':
     # Read reference image
-    refFilename = "thermal.bmp"
+    refFilename = "thermal.bmp" # Change name of reference image
     print("Reading reference image:", refFilename)
     imReference = cv2.imread(refFilename, cv2.IMREAD_COLOR)
 
     # Read image to be aligned
-    imFilename = "visible.bmp"
+    imFilename = "visible.bmp" # Change name of Aligning Image
     print("Reading image to align: ", imFilename)
     im = cv2.imread(imFilename, cv2.IMREAD_COLOR)
 
